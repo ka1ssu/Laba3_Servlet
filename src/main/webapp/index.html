@@ -11,42 +11,40 @@
     <div>
         <h4 class="input-group mb-3" style="width: 300px; margin: 0 auto; margin-top: 150px;">Заполните анкету машины</h4>
 
-        <form action="CarsServlet" method="post">
+        <form id="servey" action="CarsServlet" method="post">
             <div class="questionnaire">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default1"  style="width: 100px">Марка</span>
-                    <input type="text" id="name" name="name" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
+                    <input type="text" id="brand" name="brand" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default2"  style="width: 100px">Модель</span>
-                    <input type="text" id="lastname" name="lastname" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
+                    <input type="text" id="model" name="model" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default3"  style="width: 100px">Пробег</span>
-                    <input type="number" id="age" name="age" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
+                    <input type="number" id="mileage" name="mileage" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default4"  style="width: 100px">Цвет</span>
-                    <input  type="text" id="group" name="group" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
+                    <input  type="text" id="color" name="color" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default5"  style="width: 100px">Цена</span>
-                    <input  type="number" id="telephone_number" name="telephone_number" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
+                    <input  type="number" id="price" name="price" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style="">
                 </div>
             </div>
 
-
-            <div class="button-container">
-                <form action="CarsServlet" method="get">
-                    <button type="submit" value="Submit" class="btn btn-info"
-                            style="">Посмотреть таблицы</button>
-                </form>
-                <form action="CarsServlet" method="get">
-                    <button type="submit" value="Submit" class="btn btn-success"
-                            style="">Отправить</button>
-                </form>
-            </div>
         </form>
+
+        <div class="button-container">
+            <form action="CarsServlet" method="get">
+                <button type="submit" value="Submit" class="btn btn-info"
+                        style="">Посмотреть таблицы</button>
+            </form>
+            <button form="servey" type="submit" value="Submit" class="btn btn-success" id="send"
+                    style="">Отправить</button>
+        </div>
     </div>
 
 <script src="JS/bootstrap.bundle.min.js"></script>

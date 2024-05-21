@@ -3,8 +3,14 @@
     display: flex;
     margin: 0 auto;
     text-align: center;
+    /*justify-content: space-between;*/
+    /*padding: 100px;*/
     justify-content: center;
-    text-indent: 10px;
+    /*text-indent: 20px;*/
+}
+
+#send {
+    margin-left: 15px;
 }
 
 .questionnaire {

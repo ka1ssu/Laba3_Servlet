@@ -59,7 +59,7 @@ public class CarsServlet extends HttpServlet {
 
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
-            out.println("<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Таблица</title><link href=\"css/bootstrap.min.css\" rel=\"stylesheet\"></head><body style=\"background-color: #0a58ca\"><div><table class=\"table\"><thead><tr><th scope=\"col\">Имя</th><th scope=\"col\">Фамилия</th><th scope=\"col\">Возраст</th> <th scope=\"col\">Группа</th><th scope=\"col\">Номер телефона</th></tr></thead>");
+            out.println("<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Таблица</title><link href=\"css/bootstrap.min.css\" rel=\"stylesheet\"></head><body style=\"background-color: #0a58ca\"><div><table class=\"table\"><thead><tr><th scope=\"col\">Марка</th><th scope=\"col\">Модель</th><th scope=\"col\">Пробег</th> <th scope=\"col\">Цвет</th><th scope=\"col\">Цена</th></tr></thead>");
             for (Object obj : carsList) {
                 JSONObject car = (JSONObject) obj;
                 out.println("<tbody> <tr><td>" + car.get("brand") + "</td><td>" + car.get("model") + "</td><td>" + car.get("mileage") + "</td><td>" + car.get("color") + "</td><td>" + car.get("price") + "</td>");
